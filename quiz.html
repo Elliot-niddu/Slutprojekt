@@ -5,57 +5,27 @@
     <title>quiz</title>
   </head>
   <body>
-    
+    <section id="quiz">
 <!-- quiz nedan -->
  <!-- alfastrålning -->
-   <p>Vad ger alfastrålning ifrån sig</p>
-   <button onclick="checkAnswer('fel')">väte</button>
-   <button onclick="checkAnswer('rätt')">Helium</button>
-
+   <p>Vad ger alfastrålning ifrån sig?</p>
+   <button onclick="checkAnswer('fel')">Helium</button>
+   <button onclick="checkAnswer('rätt')">Väte</button>
    <p id="resultat"></p>
 
-   <script>
-    function checkAnswer(svar) {
-      if (svar === "rätt") {
-        document.getElementById("resultat").innerHTML = "Rätt svar!";
-      } 
-      else {
-        document.getElementById("resultat").innerHTML = "Fel svar!"
-      }
-    }
-   </script>
    
-<!-- betastrålning -->
-    <p>Vad ger alfa strålning ifrån sig</p>
-   <button onclick="checkAnswer('fel')">väte</button>
-   <button onclick="checkAnswer('rätt')">Helium</button>
 
-   <p id="resultat"></p>
+  <p>Vad händer i solen</p>
+   <button onclick="checkAnswer('fel')">fission</button>
+   <button onclick="checkAnswer('rätt')">fussion</button>
+   <p id="resultatSol"></p>
 
-   <script>
-    function checkAnswer(svar) {
-      if (svar === "rätt") {
-        document.getElementById("resultat").innerHTML = "Rätt svar!";
-      } 
-      else {
-        document.getElementById("resultat").innerHTML = "Fel svar!"
-      }
-    }
-   </script>
+   <p>Vad är en isotop</p>
+   <button onclick="checkAnswer('rätt')">Atomer av samma grundämne men med olika många neutroner</button>
+   <button onclick="checkAnswer('fel')">Atomer med lika många elektroner men olika mängd protoner</button>
+   <p id="resultatIsotop"></p>
+   </section>
 
-    <p>Vad ger alfa strålning ifrån sig</p>
-   <button onclick="checkAnswer('fel')">väte</button>
-   <button onclick="checkAnswer('rätt')">Helium</button>
-
-   <p id="resultat"></p>
-
-   <script>
-    function checkAnswer(svar) {
-      if (svar === "rätt") {
-        document.getElementById("resultat").innerHTML = "Rätt svar!";
-      } 
-      else {
-        document.getElementById("resultat").innerHTML = "Fel svar!"
-      }
-    }
-   </script>
+   <script src="script.js"></script>
+</body>
+</html>
