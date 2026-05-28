@@ -1,23 +1,11 @@
-function checkAnswer(svar) {
+function checkAnswer(svar, fragorId) {
+  const resultat = document.getElementById(fragorId);
   if (svar === "rätt") {
-    document.getElementById("resultat").innerHTML = "Rätt svar!";
+  resultat.innerHTML = "Rätt svar!";
   } else {
-    document.getElementById("resultat").innerHTML = "Fel svar, försök igen.";
+    resultat.innerHTML = "Fel svar, försök igen.";
   }
 }
 
-function checkAnswer(svar) {
-  if (svar === "rätt") {
-    document.getElementById("resultatSol").innerHTML = "Rätt svar!";
-  } else {
-    document.getElementById("resultatSol").innerHTML = "Fel svar, försök igen.";
-  }
-}
 
-function checkAnswer(svar) {
-  if (svar === "rätt") {
-    document.getElementById("resultatIsotop").innerHTML = "Rätt svar!";
-  } else {
-    document.getElementById("resultatIsotop").innerHTML = "Fel svar, försök igen.";
-  }
-}
+// koden ovan tar emot två värden. Den kollar om det är lika med rätt eller fel. och sckikar ett resultat

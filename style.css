@@ -1,20 +1,69 @@
-#begrepp {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+/* Stylar hem knappen */
+#hem {
+    background-color: orange;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    display: inline-block;
 }
 
-#formler {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+/* lägger text i mitten */
 
-#quiz {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.titel {
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+/* Gör så att alla section är på ett visst sätt alltså i mitten */
+section {
+    background-color: white;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 40px 24px;
+    line-height: 1.6;
+}
+/* Gör header blå */
+header {
+    background-color: blue;
+    color: white;
+    padding: 16px;
+    width: 100%;
+    height: 40px;
+}
+/* Gör så att frågorna blir som en ruta och alla ser likadana ut */
+.fråga {
+    background-color: beige;
+    border: 2px solid grey;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+/* Gör så knapparna ser bättre ut */
+.fråga button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    display: inline-block;
+    margin-right: 10px;
+}
+/* ändrar knapparna i index */
+.knapp {
+    background-color: orange;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    display: inline-block;
+}
+/*ändrar storleken på bilden av grafen*/
+#graf {
+    width: 600px;
+    height: auto;
+}
+/* ändrar positionen på kärnfysik texten så att den nästan är längst till höger */
+#kärnfysik {
+    margin-left: 2300px;
 }

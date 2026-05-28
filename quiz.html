@@ -1,31 +1,52 @@
-<html lang="en">
+<html lang="sv">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>quiz</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <section id="quiz">
-<!-- quiz nedan -->
- <!-- alfastrålning -->
-   <p>Vad ger alfastrålning ifrån sig?</p>
-   <button onclick="checkAnswer('fel')">Helium</button>
-   <button onclick="checkAnswer('rätt')">Väte</button>
-   <p id="resultat"></p>
+    <header>
+      <h1 id="kärnfysik">Kärnfysik</h1>
+    <a href="index.html" id="hem">Hem</a>
+</header>
 
-   
+    <section>
+      <h1 class="titel">Quiz</h1>
+      <p class="titel">Testa dina kunskaper om kärnfysik genom att svara på följande frågor:</p>
+<!-- quiz nedan som sckikar och tar emot värden -->
+ <!-- fråga 1 -->
 
-  <p>Vad händer i solen</p>
-   <button onclick="checkAnswer('fel')">fission</button>
-   <button onclick="checkAnswer('rätt')">fussion</button>
-   <p id="resultatSol"></p>
+ <section class="fråga">
+<p>Vad ger alfastrålning ifrån sig?</p>
+<button onclick="checkAnswer('rätt', 'resultat1')">Väte</button>
+<button onclick="checkAnswer('fel', 'resultat1')">Helium</button>
+<p id="resultat1"></p>
+</section>
 
-   <p>Vad är en isotop</p>
-   <button onclick="checkAnswer('rätt')">Atomer av samma grundämne men med olika många neutroner</button>
-   <button onclick="checkAnswer('fel')">Atomer med lika många elektroner men olika mängd protoner</button>
-   <p id="resultatIsotop"></p>
-   </section>
+<section class="fråga">
+<!-- fråga 2 -->
+<p>Vilken strålning har mer energi?</p>
+<button onclick="checkAnswer('fel', 'resultat2')">betastrålning</button>
+<button onclick="checkAnswer('rätt', 'resultat2')">gammastrålning</button>
+<p id="resultat2"></p>
+</section>
 
-   <script src="script.js"></script>
+
+<!-- fråga 3 -->
+<section class="fråga">
+<p>Ett radioaktivt ämne har en halveringstid på 8 timmar. Om du börjar med 160 g, hur mycket finns kvar efter 24 timmar?</p>
+<button onclick="checkAnswer('fel', 'resultat3')">40 gram</button>
+<button onclick="checkAnswer('rätt', 'resultat3')">20 gram</button>
+<p id="resultat3"></p>
+</section>
+
+<!-- knappen laddar om sidan -->
+<button onclick="location.reload()" class="knapp">Börja om!</button>
+
+
+</section>
 </body>
+<!-- kopplar till java scripten  -->
+<script src="script.js"></script>
 </html>
